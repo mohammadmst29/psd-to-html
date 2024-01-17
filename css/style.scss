@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins regular';
+}
+
+@font-face {
+    font-family: 'poppins regular';
+    src: url(../fonts/Poppins-Medium.ttf);
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins regular';
+  }
+  
+  @font-face {
+    font-family: 'poppins semibold';
+    src: url(../fonts/Poppins-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'poppins bold';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'opensans regular';
+    src: url(../fonts/Poppins-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: 'opensans bold';
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+  
+  $poppinsSemibold: 'poppins semibold';
+  $poppinsBold: 'poppins bold';
+  $opensansRegular: 'opensans regular';
+  $opensansBold: 'opensans bold';
+  
+  .container {
+    width: 100%;
+    margin: auto;
+    >nav {
+        background: #3923ff;
+        height: 106px;
+        label.logo{
+            color: white;
+            font-size: 25px;
+            line-height: 106px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        >ul {
+            list-style: none;
+            display: flex;
+            float: right;
+            padding-right: 20px;
+            >li {
+                display: inline-block;
+                line-height: 106px;
+                margin: 0 20px;
+                > a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 17px;
+                    padding: 7px 13px;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    font-family: 'poppins regular';
+                }
+                > a:hover {
+                    background: #1061a3;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    >.area1 {
+        background: #ececec;
+        width: 100%;
+        height: 774px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        >div{
+            &:first-child{
+                padding-top: 50px;
+                width: 50%;
+                text-align: center;
+                line-height: 774px;
+                text-decoration: line-through;
+            }
+            &:nth-child(2){
+                text-align: center;
+                font-size: 30px;
+                font-family: $poppinsBold;
+                >p{
+                    font-size: 15px;
+                }
+                >div{
+                    padding: 80px;
+                    .button-container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 5px;
+                      }
+                      .left-button {
+                        background: #0b416d;
+                        color: #fff;
+                        border-width: 0;
+                        width: 150px;
+                        height: 50px;
+                        font-size: 20px;
+                      }
+                      
+                      .right-button {
+                        background: #242424;
+                        color: #fff;
+                        border-width: 0;
+                        width: 150px;
+                        height: 50px;
+                        font-size: 20px;
+                      }
+                }
+            }
+            &:nth-child(3){
+                >img{
+                    width: 940px;
+                    padding: 80px;
+                }
+            }
+            &:nth-child(4){
+                width: 10%;
+                margin-top: 100%;
+            }
+        }
+    }
+
+    .ourservice {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        > div {
+            color: rgb(0, 0, 0);
+            font-size: 24px;  
+            font-weight: bold; 
+        }
+    }
+
+    
+    
+
+    .threeimage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;  
+    
+        .image-container {
+            position: relative;
+    
+            img {
+                width: 100%;
+                height: 600px;
+                border-radius: 8px;
+                
+            }
+    
+            .content {
+                padding: 20px;
+                
+                color: rgb(0, 0, 0);
+                text-align: center;
+                box-sizing: border-box;
+    
+                h1 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .button {
+                    background: #161817;
+                    color: rgb(255, 255, 255);
+                    padding: 8px 16px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    
+
+    .bestquality {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden; 
+        background-size: cover;
+        background-position: center center;
+    
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+    
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+    
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            .white-button {
+                background-color: white;
+                color: #000000; 
+                padding: 20px 50px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
+    
+
+
+
+  }
